@@ -1,72 +1,67 @@
-pacote com. exemplo. projeto_java01;
+package unidade_1;
 
-Aula pública  Guitarra {
+public class Guitarra {
 
-    private String numeroSerie, fabricante, modelo, tipo, madeira;
-    privado duplo preco;
+	private String numeroSerie, fabricante, modelo, tipo, madeira;
+	private double preco;
 
-    Criação do construtor da classe Guitarra
-    public guitarra(
-            String numeroSerie, String fabricante,
-            String modelo, String tipo,
-            Corda madeira, duplo preco) {
-        isso. numeroSerie = numeroSérie;
-        isso.  fabricante = fabricante;
-        isso.  modelo = modelo;
-        isso.  tipo = tipo;
-        isso.  madeira = madeira;
-        isso. preco = preco;
-    }
-    public String getNumeroSerie() {
-        retorno numeroSerie;
-    }
-    public void setNumeroSerie(String numeroSerie) {
-        isso. numeroSerie = numeroSérie;
-    }
-    public String getFabricante() {
-        Return fabricante;
-    }
-    public void setFabricante(String, fabricante,) {
-        isso.  fabricante = fabricante;
-    }
-    public String getModelo() {
-        modelo de retorno ;
-    }
-    public void setModelo(String modelo) {
-        isso.  modelo = modelo;
-    }
-    public String getTipo() {
-        tipo de retorno ;
-    }
-    public void setTipo(String tipo) {
-        isso.  tipo = tipo;
-    }
-    String pública getMadeira() {
-        Regresso Madeira;
-    }
-    public void setMadeira(String madeira) {
-        isso.  madeira = madeira;
-    }
-    público duplo getPreco() {
-        Retornar PRECO;
-    }
-    public void setPreco(double preco) {
-        isso. preco = preco;
-    }
 
-    o método main() é o método principal da classe
-    public static void main(String[] args) {
-        instanciamos um objeto chamado "minhaGuitara" que será do tipo "Guitarra"
-        Os valores passados são usados pelo construtor da classe para criar
-        o objeto
-        guitarra minhaGuitarra = nova guitarra("01020304", "fender", "telecaster",
-                "elétrica", "mogno", 1500);
+	public Guitarra(
+				String numeroSerie, String fabricante,
+				String modelo, String tipo,
+				String madeira, double preco) {
+			this.numeroSerie = numeroSerie;
+			this.fabricante = fabricante;
+			this.modelo = modelo;
+			this.tipo = tipo;
+			this.madeira = madeira;
+			this.preco = preco;
+	}
+	public String getNumeroSerie() {
+		return numeroSerie;
+	}
+	public void setNumeroSerie(String numeroSerie) {
+		this.numeroSerie = numeroSerie;
+	}
+	public String getFabricante() {
+		return fabricante;
+	}
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public String getMadeira() {
+		return madeira;
+	}
+	public void setMadeira(String madeira) {
+		this.madeira = madeira;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
 
-        Testando os dados da classe, imprimindo a saída simples no terminal
-        Sistema. fora. println(minhaGuitarra. getNumeroSerie());
-        Sistema. fora. println(minhaGuitarra. getMadeira());
-        Sistema. fora. println(minhaGuitarra. getPreco());
-        Sistema. fora. println(minhaGuitarra. getTipo());
-    }
+public static void main(String[] args) {
+	Guitarra minhaGuitarra = new Guitarra("02055304", "squier", "stratocaster", "elétrica", "mogno", 1500);
+
+	System.out.printIn(minhaGuitarra.getNumeroSerie());
+	System.out.printIn(minhaGuitarra.getMadeira());
+	System.out.printIn(minhaGuitarra.getPreco());
+	System.out.printIn(minhaGuitarra.getTipo());
+
+	}
 
 }
